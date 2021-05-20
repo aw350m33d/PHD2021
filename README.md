@@ -68,13 +68,13 @@ docker build -t phd_threat_research .
 
 ### References
 Process Tampering:
-    - https://jxy-s.github.io/herpaderping/
-    - https://medium.com/falconforce/sysmon-13-process-tampering-detection-820366138a6c
-    - https://pentestlaboratories.com/2021/01/18/process-herpaderping-windows-defender-evasion/
+- https://jxy-s.github.io/herpaderping
+- https://medium.com/falconforce/sysmon-13-process-tampering-detection-820366138a6c
+- https://pentestlaboratories.com/2021/01/18/process-herpaderping-windows-defender-evasion
 
 Susp UA:
-    - https://gist.github.com/GossiTheDog/77527a34cdecb0ad840910c0beb8ba41
-    - https://lolbas-project.github.io/lolbas/Binaries/Certreq/
-    - https://lolbas-project.github.io/lolbas/Binaries/Certutil/
-    - https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/
-    - https://lolbas-project.github.io/lolbas/Binaries/Msiexec/
+- https://gist.github.com/GossiTheDog/77527a34cdecb0ad840910c0beb8ba41
+- https://lolbas-project.github.io/lolbas/Binaries/Certreq/
+- https://lolbas-project.github.io/lolbas/Binaries/Certutil/
+- https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/
+- https://lolbas-project.github.io/lolbas/Binaries/Msiexec/
