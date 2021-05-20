@@ -1,0 +1,12 @@
+conditions:
+  correlation_name: not null
+extensions:
+  ExtendedProperties: '{}'
+  CompromisedEntity: Unknown
+mapping:
+  _meta.assetIds: Entities
+  correlation_name: [AlertName, AlertDisplayName]
+  tenant_id: TenantId
+  time: StartTimeUtc
+  uuid: SystemAlertId
+  text: Description
