@@ -72,9 +72,52 @@ Process Tampering:
 - https://medium.com/falconforce/sysmon-13-process-tampering-detection-820366138a6c
 - https://pentestlaboratories.com/2021/01/18/process-herpaderping-windows-defender-evasion
 
+
 Susp UA:
 - https://gist.github.com/GossiTheDog/77527a34cdecb0ad840910c0beb8ba41
 - https://lolbas-project.github.io/lolbas/Binaries/Certreq/
 - https://lolbas-project.github.io/lolbas/Binaries/Certutil/
 - https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/
 - https://lolbas-project.github.io/lolbas/Binaries/Msiexec/
+
+User agents:
+```bash
+//    certreq
+'Mozilla/4.0 (compatible; Win32; NDES client*'
+
+//    powershell Invoke-WebRequest
+'Mozilla/*WindowsPowerShell/'
+
+//    certutil.exe
+'Microsoft-CryptoAPI/*'
+OR
+'CertUtil URL Agent'
+
+//    regsvr32.exe
+'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E*'
+ 
+//    msiexec.exe
+'Windows Installer'  
+```
+
+Process Tampering whitelist (Image field):
+```bash
+C:\Program Files\Mozilla Firefox\firefox.exe
+C:\Program Files\Mozilla Firefox\updater.exe
+C:\Program Files\Mozilla Firefox\default-browser-agent.exe
+C:\Program Files\Mozilla Firefox\pingsender.exe
+
+C:\Program Files\Git\cmd\git.exe
+C:\Program Files\Git\mingw64\bin\git.exe
+C:\Program Files\Git\mingw64\libexec\git-core\git.exe
+
+C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\*\BHO\ie_to_edge_stub.exe
+C:\Program Files (x86)\Microsoft\Edge\Application\*\identity_helper.exe</Image>
+C:\Program Files (x86)\Microsoft\EdgeUpdate\Install\*\MicrosoftEdge_X64_*
+
+// SYSTEM activity
+unknown process 
+
+C:\Program Files\Microsoft VS Code\Code.exe
+```
